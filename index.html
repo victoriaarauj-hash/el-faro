@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html><script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "El Faro Buenas Noticias",
+  "schemaVersion": 1,
+  "description": "El Faro — diario de noticias exclusivamente positivas en espanol. Portada tipo periodico con secciones: Tecnologia, Ciencia y Salud, Espacio, Naturaleza, Sociedad, Viajes, Arte y Musica, Economia y Deporte. Contenido curado de fuentes reales, disenado para refrescarse cada manana mediante una tarea programada."
+}
+</script>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -145,294 +151,314 @@ footer .meta{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;letter
 /* ====== CONTENIDO DEL DÍA ======
    Esta tarea automática reemplaza el bloque DATOS cada mañana. */
 const DATOS = {
-  edicion: 3,
-  fecha: "2026-06-21",
-  actualizado: "21 de junio de 2026, 09:00",
+  edicion: 4,
+  fecha: "2026-06-22",
+  actualizado: "22 de junio de 2026, 16:00",
   portada: {
-    categoria: "Naturaleza",
-    titular: "Los manglares del planeta ganan terreno por primera vez en décadas",
-    bajada: "Un estudio global publicado esta semana analiza 40 años de datos satelitales y confirma que en los últimos 16 años las ganancias de manglares ya superan a las pérdidas —solo el 1% neto de su superficie se perdió en cuatro décadas—, reviriendo una tendencia que parecía imparable. Los manglares capturan hasta cinco veces más carbono que los bosques terrestres, protegen las costas de ciclones y son guardería del 80% de las especies marinas comerciales. La clave del giro fue combinar legislación de protección costera con programas locales donde las comunidades pescadoras tienen un rol protagónico en la restauración. Es la primera señal concreta de recuperación de estos ecosistemas a escala global en generaciones.",
-    fuente: "Positive News / ScienceDaily",
-    url: "https://www.positive.news/society/good-news-stories-from-week-24-of-2026/"
+    categoria: "Ciencia y Salud",
+    titular: "Un análisis de sangre detecta hasta 50 tipos de cáncer antes de los primeros síntomas",
+    bajada: "Un ensayo clínico en el Reino Unido con más de 140.000 participantes evalúa una prueba que identifica fragmentos de ADN tumoral en la sangre, capaz de detectar hasta 50 tipos de cáncer en estadios muy tempranos, mucho antes de que el paciente sienta cualquier señal. Este hito podría transformar para siempre la prevención oncológica a escala mundial y salvar millones de vidas cada año.",
+    fuente: "AIMFA / Seis avances médicos 2026",
+    url: "https://aimfa.es/con-que-nos-sorprendera-la-ciencia-6-avances-de-la-medicina-para-2026/"
   },
   destacados: [
     {
+      categoria: "Argentina / Ciencia",
+      titular: "El CONICET vuelve al océano profundo: la primera expedición encontró 40 especies nuevas y tuvo 92.000 espectadores en vivo",
+      texto: "Tras identificar más de 40 especies potencialmente nuevas para la ciencia, los investigadores argentinos preparan su regreso al fondo oceánico con mayor equipamiento y una comunidad de fans global entusiasmada.",
+      url: "https://www.lanacion.com.ar/sociedad/despues-de-conquistar-a-millones-de-espectadores-cientificos-del-conicet-volveran-a-explorar-el-nid08062026/"
+    },
+    {
       categoria: "Mundial 2026",
-      titular: "Messi marca un triplete histórico: Argentina golea 3-0 a Argelia",
-      texto: "El 16 de junio, Lionel Messi firmó el primer hat-trick de su carrera en una Copa del Mundo, convirtiendo el debut de Argentina en una fiesta. Con sus tres goles ante Argelia, superó los 16 tantos de Miroslav Klose y se convirtió en el máximo goleador de la historia de los Mundiales. Argentina lidera el Grupo J con comodidad.",
-      url: "https://cnnespanol.cnn.com/2026/06/17/deportes/live-news/resultado-argentina-argelia-mundial-2026-orix"
+      titular: "Los mejores momentos virales del Mundial: fanáticos escoceses, récords históricos y un torneo que une al mundo",
+      texto: "Con 48 naciones, aficionados de todo el planeta creando escenas de amistad inesperada, y México como primer clasificado a octavos, el Mundial 2026 ya es el torneo más esperanzador de la historia del fútbol.",
+      url: "https://es-us.noticias.yahoo.com/los-7-mejores-momentos-virales-del-mundial-2026-hasta-el-momento-170029403.html"
     },
     {
-      categoria: "Economía Argentina",
-      titular: "Banco Mundial: Argentina crecerá 3,6% en 2026, entre las más altas de la región",
-      texto: "El organismo destacó que Argentina estaría entre las economías de mayor crecimiento de América Latina este año y el próximo. De cumplirse, sería la primera vez desde 2008 que el país acumula tres años consecutivos de expansión del PBI. El riesgo país cayó a 425 puntos en junio, acercando al país a los mercados internacionales.",
-      url: "https://www.lanacion.com.ar/economia/el-banco-mundial-pondera-el-crecimiento-de-la-economia-argentina-en-2026-nid08042026/"
-    },
-    {
-      categoria: "Salud",
-      titular: "La salud cerebral puede mejorar a cualquier edad, confirma estudio de 3 años",
-      texto: "Una investigación con casi 4.000 adultos de entre 19 y 94 años demostró que la memoria de trabajo y otras funciones cognitivas pueden aumentar con práctica sostenida incluso después de los 70. El hallazgo desafía décadas de creencias sobre el declive mental inevitable y abre la puerta a programas preventivos a escala masiva.",
-      url: "https://www.sciencedaily.com/news/top/health/"
+      categoria: "Medio Ambiente",
+      titular: "Hito global: todas las poblaciones de atún del mundo muestran signos de recuperación",
+      texto: "WWF celebra que, por primera vez en la historia, todas las especies de atún monitoreadas a nivel global están mejorando, un triunfo de la pesca sostenible y los acuerdos internacionales de conservación marina.",
+      url: "https://www.wwf.es/buenas_noticias_naturaleza_en_positivo/victorias_para_la_naturaleza_2026/"
     }
   ],
   secciones: [
     {
-      nombre:"Tecnología y Descubrimientos", icono:"🔬", color:"#2f6fb0",
-      notas:[
+      nombre: "Tecnología y Descubrimientos",
+      icono: "🔬",
+      color: "#2f6fb0",
+      notas: [
         {
-          cat:"Medio ambiente",
-          tit:"Científicos destruyen los 'químicos eternos' con luz UV",
-          txt:"Los PFAS son compuestos que se acumulan en suelo, agua y cuerpo humano durante siglos y están vinculados a cáncer, problemas hormonales y daño renal. Investigadores lograron descomponerlos por completo usando radicales de hidrógeno generados con luz ultravioleta, sin añadir nuevos químicos ni generar residuos secundarios. El proceso funciona a temperatura ambiente y podría escalarse para tratar agua potable contaminada en ciudades. Es uno de los avances más esperados en química ambiental de los últimos años.",
-          fuente:"ScienceDaily",
-          url:"https://www.sciencedaily.com/news/matter_energy/technology/"
+          cat: "Inteligencia Artificial",
+          tit: "Nvidia y StarCloud entrenan el primer modelo de IA en órbita terrestre",
+          txt: "La colaboración entre Nvidia y StarCloud logró entrenar un modelo de inteligencia artificial directamente desde el espacio, demostrando que la computación orbital es viable y abriendo una nueva era para el procesamiento de datos fuera de la atmósfera.",
+          fuente: "Ecoportal / Avances tecnológicos 2026",
+          url: "https://www.ecoportal.net/tecnologia/2026-con-avances-tecnologicos/"
         },
         {
-          cat:"Energía",
-          tit:"Una hoja artificial que se regula sola, sin baterías",
-          txt:"Ingenieros crearon un sistema de fotosíntesis artificial que ajusta su propio ritmo de producción de energía según la intensidad de la luz disponible, igual que hacen las plantas reales. Los diseños anteriores necesitaban baterías para gestionar los excedentes de energía en días soleados; este sistema los elimina por completo. En pruebas de laboratorio fue estable durante semanas seguidas sin intervención. El siguiente paso es probarlo en paneles solares de uso doméstico.",
-          fuente:"ScienceDaily",
-          url:"https://www.sciencedaily.com/"
+          cat: "Robótica",
+          tit: "Atlas de Boston Dynamics camina, levanta 50 kg y cambia su batería solo: el robot humanoide que asombró al mundo",
+          txt: "En el CES 2026, Hyundai y Boston Dynamics presentaron la versión más avanzada de Atlas, capaz de moverse con fluidez total, girar la cabeza 360 grados y reemplazar su propia batería de forma autónoma sin intervención humana.",
+          fuente: "El Espectador / CES 2026",
+          url: "https://www.elespectador.com/tecnologia/ces-2026-los-lanzamientos-mas-impactantes-de-una-tecnologia-integrada-a-la-vida-cotidiana-noticias-hoy/"
         },
         {
-          cat:"Computación cuántica",
-          tit:"El chip Majorana 2 de Microsoft: fiabilidad multiplicada por mil",
-          txt:"La computación cuántica promete resolver en minutos problemas que llevarían millones de años a una computadora clásica, pero el gran obstáculo ha sido que los 'qubits' cometen errores constantemente. Microsoft presentó mejoras en su chip Majorana 2 que reducen esos errores en un factor de mil, acercando el cómputo cuántico estable a la realidad práctica. El avance se basa en partículas llamadas fermiones de Majorana, que son intrínsecamente más resistentes al ruido que los qubits convencionales. Los expertos lo califican de hito comparable al primer transistor de silicio.",
-          fuente:"Microsoft Build 2026",
-          url:"https://www.sciencedaily.com/news/top/technology/"
+          cat: "Educación digital",
+          tit: "La IA personalizada y la realidad mixta reinventan el aula: cuatro tendencias que transforman la educación global",
+          txt: "El Tecnológico de Monterrey identifica la IA adaptativa, los tutores virtuales, el aprendizaje por proyectos y la realidad extendida como las fuerzas que están haciendo la educación más efectiva, inclusiva y apasionante para millones de estudiantes.",
+          fuente: "Tecnológico de Monterrey",
+          url: "https://conecta.tec.mx/en/news/national/education/four-tech-trends-2026-classroom-future"
         }
       ]
     },
     {
-      nombre:"Ciencia y Salud", icono:"❤️", color:"#c0392b",
-      notas:[
+      nombre: "Ciencia y Salud",
+      icono: "❤️",
+      color: "#c0392b",
+      notas: [
         {
-          cat:"Regeneración",
-          tit:"Descubren el interruptor que apaga la regeneración en mamíferos",
-          txt:"Los axolotes pueden regenerar patas enteras, corazón e incluso partes del cerebro. Los mamíferos, no. Un nuevo estudio comparó el genoma activo de ambos durante la regeneración y encontró un conjunto de genes que en humanos y ratones están silenciados por marcadores epigenéticos. Al reactivarlos en ratones, los animales mostraron una capacidad de regeneración de músculo cardíaco que normalmente no existe. La implicación es enorme: quizás la regeneración nunca desapareció de nuestra biología, solo se apagó.",
-          fuente:"ScienceDaily",
-          url:"https://www.sciencedaily.com/news/health_medicine/"
+          cat: "Oncología",
+          tit: "El mayor ensayo clínico de la historia evalúa la biopsia líquida que detecta 50 cánceres en una gota de sangre",
+          txt: "140.000 personas participan en el Reino Unido en un estudio que puede cambiar la oncología para siempre: una prueba de sangre que identifica ADN tumoral circulante y detecta medio centenar de tipos de cáncer antes de los primeros síntomas.",
+          fuente: "AIMFA / Avances médicos 2026",
+          url: "https://aimfa.es/con-que-nos-sorprendera-la-ciencia-6-avances-de-la-medicina-para-2026/"
         },
         {
-          cat:"Salud mental",
-          tit:"Probióticos específicos mejoran la depresión en adultos mayores",
-          txt:"Un ensayo clínico controlado con 200 personas mayores de 65 años mostró que tomar una combinación particular de cepas de Lactobacillus y Bifidobacterium durante 12 semanas redujo los síntomas depresivos en un 34%, comparable a algunos antidepresivos pero sin sus efectos secundarios. Los investigadores creen que el mecanismo es el eje intestino-cerebro: las bacterias intestinales producen serotonina y otros neurotransmisores que influyen directamente en el estado de ánimo. El hallazgo abre una nueva vía terapéutica no farmacológica.",
-          fuente:"ScienceDaily",
-          url:"https://www.sciencedaily.com/news/top/health/"
+          cat: "Salud global",
+          tit: "Las nuevas infecciones por VIH cayeron un 40% desde 2010: la ciencia gana terreno",
+          txt: "La OMS celebró que las nuevas infecciones por VIH se redujeron un 40% en 14 años y el consumo de tabaco y alcohol ha descendido sostenidamente, mientras los programas de vacunación han salvado ya más de 154 millones de vidas infantiles.",
+          fuente: "OMS / Día Mundial de la Salud 2026",
+          url: "https://udgtv.com/noticias/oms-dia-mundial-de-la-salud-2026-destaca-avances-cientificos/311526"
         },
         {
-          cat:"Fisiología",
-          tit:"Mayo Clinic descubre un sistema renal de respaldo desconocido",
-          txt:"Se creía que la vasopresina era la única hormona que regula cuánta agua retienen los riñones. Investigadores de Mayo Clinic encontraron un segundo mecanismo completamente independiente que actúa como respaldo cuando el primero falla. Este descubrimiento explica por qué ciertos pacientes con diabetes insípida —una condición donde la vasopresina no funciona— no se deshidratan tan rápido como la teoría predecía. Podría cambiar el tratamiento de enfermedades renales que afectan a millones de personas.",
-          fuente:"Mayo Clinic",
-          url:"https://www.sciencedaily.com/news/health_medicine/"
+          cat: "Medicina de precisión",
+          tit: "La OMS adopta resolución histórica: la medicina personalizada es prioridad global de salud en 2026",
+          txt: "La resolución EB158.R2, adoptada en junio, convierte la medicina de precisión —que usa biomarcadores y datos clínicos para tratamientos a medida— en un eje central de la política sanitaria mundial, marcando un antes y un después.",
+          fuente: "OPS/OMS",
+          url: "https://consultorsalud.com.mx/la-ciencia-dia-mundial-de-la-salud-2026/"
         }
       ]
     },
     {
-      nombre:"Espacio y Astronomía", icono:"🌌", color:"#6c3fb0",
-      notas:[
+      nombre: "Espacio y Astronomía",
+      icono: "🌌",
+      color: "#6c3fb0",
+      notas: [
         {
-          cat:"Exoplanetas",
-          tit:"El James Webb mapea el clima de un planeta alienígena",
-          txt:"Por primera vez, el telescopio James Webb detectó diferencias de temperatura entre el lado del amanecer y el del atardecer de un exoplaneta del tamaño de Neptuno, ubicado a 430 años luz. El lado que da al sol supera los 800 °C; el lado nocturno, apenas 300 °C. Esta diferencia enorme revela vientos planetarios brutales que circulan el calor, algo que nunca habíamos podido observar directamente en otro mundo. Es el comienzo de la meteorología exoplanetaria como disciplina.",
-          fuente:"ScienceDaily / NASA",
-          url:"https://www.sciencedaily.com/news/space_time/astronomy/"
+          cat: "Guía NASA junio",
+          tit: "La NASA publica su guía para observar el cielo en junio 2026: conjunciones, solsticio y el Triángulo de Verano",
+          txt: "La agencia espacial invita a alzar los ojos en junio: Venus y Júpiter aparecen muy juntos al atardecer, Mercurio suma un mini-desfile planetario del 11 al 15, y el solsticio del 21 da paso al verano astronómico boreal.",
+          fuente: "NASA Ciencia",
+          url: "https://ciencia.nasa.gov/ciencias-terrestres/consejos-de-la-nasa-para-observar-el-cielo-en-junio-de-2026/"
         },
         {
-          cat:"Exploración",
-          tit:"El telescopio Roman de la NASA: 100.000 exoplanetas en una sola misión",
-          txt:"Todas las misiones espaciales de la historia han confirmado unos 5.700 planetas fuera del Sistema Solar. El telescopio Nancy Grace Roman, que la NASA lanzará en 2027, tiene el potencial de multiplicar esa cifra por casi 20 en sus primeros años de operación. Lo logra usando la técnica de microlente gravitacional, que detecta planetas cuando pasan frente a estrellas distantes. Entre ellos podrían estar cientos de planetas del tamaño de la Tierra en zonas habitables.",
-          fuente:"NASA / ScienceDaily",
-          url:"https://www.sciencedaily.com/news/space_time/space_exploration/"
+          cat: "Telescopio Nancy Grace Roman",
+          tit: "El telescopio espacial más ambicioso de la NASA lista su lanzamiento: resolverá los misterios de la energía oscura",
+          txt: "El telescopio Nancy Grace Roman está programado para despegar no antes de septiembre y promete responder las preguntas más profundas de la cosmología: qué es la energía oscura, cómo se estructura el universo y qué mundos hay más allá del Sistema Solar.",
+          fuente: "N+ / Exploración espacial 2026",
+          url: "https://www.nmas.com.mx/ciencia/ciencia-y-exploracion-espacial-2026-que-buenas-noticias-esperar-este-ano/"
         },
         {
-          cat:"Luna",
-          tit:"NASA elige a los cuatro astronautas que pisarán la Luna en Artemis III",
-          txt:"Por primera vez desde el Apollo 17 en 1972, seres humanos caminarán sobre la Luna, y la NASA ya conoce sus nombres. La misión Artemis III, prevista para 2027, incluirá a la primera mujer y a la primera persona no estadounidense en llegar al suelo lunar, cerca del polo sur donde existen reservas de hielo de agua. El polo sur nunca ha sido explorado in situ; se espera que los astronautas recojan muestras clave para planear una futura base permanente.",
-          fuente:"NASA",
-          url:"https://www.sciencedaily.com/news/space_time/"
+          cat: "Solsticio de junio",
+          tit: "Solsticio de junio 2026: el día más largo del año y una invitación a mirar el firmamento",
+          txt: "El 21 de junio marcó el inicio del verano astronómico boreal y el invierno austral, mientras el Triángulo de Verano —formado por Vega, Altair y Deneb— brilla cada noche sobre el hemisferio norte para deleite de todos los observadores.",
+          fuente: "NASA Ciencia",
+          url: "https://ciencia.nasa.gov/ciencias-terrestres/consejos-de-la-nasa-para-observar-el-cielo-en-junio-de-2026/"
         }
       ]
     },
     {
-      nombre:"Naturaleza y Medio Ambiente", icono:"🌿", color:"#2f7d6e",
-      notas:[
+      nombre: "Naturaleza y Medio Ambiente",
+      icono: "🌿",
+      color: "#2f7d6e",
+      notas: [
         {
-          cat:"Ríos",
-          tit:"Europa restaura 3.700 km de ríos en la mayor operación de renaturalización de la historia",
-          txt:"En la semana del 9 de junio, la Agencia Europea de Medio Ambiente reportó que la nueva Ley de Restauración de la Naturaleza ya permitió devolver su cauce natural a 3.700 kilómetros de ríos europeos, eliminando presas obsoletas y reintroduciendo riberas con vegetación autóctona. Es la intervención de renaturalización fluvial más grande jamás documentada. El resultado es inmediato: las poblaciones de salmón atlántico, trucha y anguila europea ya muestran recuperación en el primer año. Los ríos libres también reducen inundaciones aguas abajo y purifican el agua naturalmente.",
-          fuente:"Positive News / EEA",
-          url:"https://www.positive.news/environment/good-news-stories-from-week-23-of-2026/"
+          cat: "Océanos protegidos",
+          tit: "España alcanza el 27,5% de su superficie marina protegida: 5 nuevas áreas declaradas en 2026",
+          txt: "España avanza a buen ritmo hacia la meta del 30% de océano protegido para 2030: este año se declararon cinco nuevas Áreas Marinas Protegidas y se aprobaron más de 40 planes de gestión para garantizar la conservación efectiva de estos espacios.",
+          fuente: "WWF España",
+          url: "https://www.wwf.es/buenas_noticias_naturaleza_en_positivo/victorias_para_la_naturaleza_2026/"
         },
         {
-          cat:"Fauna",
-          tit:"Los buitres regresan al sur de Asia tras décadas de colapso",
-          txt:"Las poblaciones de buitres del subcontinente indio —que cayeron un 99% entre los 90 y los 2000 por el uso veterinario del diclofenaco— muestran recuperación sostenida en junio de 2026 según datos de BirdLife International. La prohibición del fármaco en India, Nepal, Pakistán y Bangladesh y la cría en cautiverio permitieron aumentar los censos anuales un 18% consecutivo durante cuatro años. Estas aves son esenciales: consumen carcasas antes de que propaguen enfermedades como el ántrax o la rabia, evitando potenciales epidemias humanas.",
-          fuente:"BirdLife / Positive News",
-          url:"https://www.positive.news/environment/good-news-stories-from-week-25-of-2026/"
+          cat: "Fauna silvestre",
+          tit: "Tres cachorros de lobo ibérico nacen en Cataluña: la especie regresa a los Pirineos tras un siglo de ausencia",
+          txt: "Por primera vez en más de 100 años, tres lobos ibéricos nacieron de forma natural en los Pirineos catalanes, consolidando el regreso de esta especie emblemática al noreste de la península y celebrando el éxito de décadas de conservación activa.",
+          fuente: "WWF España",
+          url: "https://www.wwf.es/buenas_noticias_naturaleza_en_positivo/victorias_para_la_naturaleza_2026/"
         },
         {
-          cat:"Energía",
-          tit:"Pakistán supera el 50% de electricidad renovable, un hito para el mundo en desarrollo",
-          txt:"En junio de 2026, la red eléctrica pakistaní generó por primera vez más de la mitad de su electricidad de fuentes renovables —principalmente solar y eólica—, consolidando una transformación energética que comenzó hace solo cinco años. El logro es especialmente notable dado que Pakistán tenía hasta 2019 cortes de luz de 12 horas diarias. El costo de la electricidad solar cayó en el país un 78% desde 2020, haciendo que instalar paneles sea más barato que conectarse a la red en zonas rurales.",
-          fuente:"IRENA / Positive News",
-          url:"https://www.positive.news/environment/good-news-stories-from-week-25-of-2026/"
+          cat: "Acción climática",
+          tit: "Día Mundial del Medio Ambiente 2026: comunidades de todo el mundo aceleran la acción climática",
+          txt: "El 5 de junio, bajo el lema #NowForClimate, miles de comunidades en todos los continentes realizaron acciones concretas de reforestación, limpieza de playas y reducción de plásticos, demostrando que la ciudadanía no espera a los gobiernos.",
+          fuente: "CGFMA / ONU Medio Ambiente",
+          url: "https://www.cgfmanet.org/es/infoesfera/dia-mundial-del-medio-ambiente-2026/"
         }
       ]
     },
     {
-      nombre:"Sociedad y Bienestar", icono:"🤝", color:"#b8860b",
-      notas:[
+      nombre: "Sociedad y Bienestar",
+      icono: "🤝",
+      color: "#b8860b",
+      notas: [
         {
-          cat:"Salud pública",
-          tit:"EE.UU. registra el mayor descenso en muertes por drogas, alcohol y suicidios en dos décadas",
-          txt:"Datos publicados la semana del 16 de junio por los CDC muestran que en 2025 las muertes por sobredosis de fentanilo bajaron un 27%, los decesos por consumo de alcohol un 11% y las muertes por suicidio un 6% respecto al año anterior. Es la primera vez desde 2004 que los tres indicadores descienden en simultáneo. Los expertos atribuyen la mejora a la expansión de los programas de reducción de daños, la mayor disponibilidad de naloxona sin receta y la apertura de centros de salud mental comunitarios financiados por fondos federales.",
-          fuente:"CDC / Positive News",
-          url:"https://www.positive.news/society/good-news-stories-from-week-25-of-2026/"
+          cat: "Educación",
+          tit: "Colombia mejora el acceso educativo: 400.000 estudiantes tienen nuevas aulas, comedores y laboratorios",
+          txt: "El Ministerio de Educación de Colombia celebra la construcción y mejoramiento de espacios educativos que ya benefician a 400.000 alumnos en todo el país, acercando la educación de calidad a las regiones más alejadas.",
+          fuente: "Ministerio de Educación de Colombia",
+          url: "https://www.mineducacion.gov.co/portal/salaprensa/Comunicados;anos/2026/"
         },
         {
-          cat:"Trabajo",
-          tit:"Australia legisla la semana laboral de cuatro días para 1,5 millones de empleados",
-          txt:"El Parlamento australiano aprobó en junio una ley que permite a empresas con más de 200 empleados implementar la semana de cuatro días sin reducción salarial, siguiendo el modelo piloto de 2024 en el que el 91% de las firmas participantes decidió mantenerlo de forma permanente. La ley entró en vigor de manera optativa para los sectores de tecnología, servicios y sector público, cubriendo a unos 1,5 millones de trabajadores. Los sindicatos la califican de la reforma laboral más importante del país desde los años 80.",
-          fuente:"Guardian Australia / Positive News",
-          url:"https://www.positive.news/society/good-news-stories-from-week-21-of-2026/"
+          cat: "Inclusión",
+          tit: "México: 8,4 millones de estudiantes ya reciben la Beca Universal Rita Cetina de educación básica",
+          txt: "El programa de becas más amplio de la historia de México incorporó a 8,4 millones de niños y jóvenes en educación básica, garantizando apoyo económico directo a las familias y reduciendo la brecha de acceso escolar.",
+          fuente: "N+ / Programas sociales 2026",
+          url: "https://www.nmas.com.mx/sociedad/programas-sociales/calendario-pagos-becas-benito-juarez-rita-cetina-junio-2026-quienes-cobran-primero-apoyo-bienestar/"
         },
         {
-          cat:"Océanos",
-          tit:"Santo Tomé y Príncipe protege el 50% de sus aguas, hito para los pequeños estados insulares",
-          txt:"El pequeño archipiélago africano anunció en junio la protección total del 50% de su zona económica exclusiva, declarando zonas sin pesca industrial ni extracción en un área que alberga tortugas laúd, ballenas jorobadas y uno de los arrecifes menos perturbados del Atlántico tropical. El país se convierte así en el primero de África en alcanzar la meta '30x30' de conservación marina antes de 2030. La decisión fue posible gracias a compensación financiera climática de la Unión Europea a cambio del acuerdo de protección.",
-          fuente:"IUCN / Positive News",
-          url:"https://www.positive.news/environment/good-news-stories-from-week-25-of-2026/"
+          cat: "Deporte y paz",
+          tit: "La ONU celebra el Mundial 2026 como recordatorio del poder del deporte para unir culturas",
+          txt: "Las Naciones Unidas destacaron que el torneo más grande de la historia del fútbol es un símbolo vivo de que el deporte construye puentes, crea espacios de diálogo y genera solidaridad entre personas de culturas, lenguas y historias muy diferentes.",
+          fuente: "Noticias ONU",
+          url: "https://news.un.org/es/story/2026/04/1541316"
         }
       ]
     },
     {
-      nombre:"Viajes y Destinos del Mundo", icono:"🧭", color:"#0e7490",
-      notas:[
+      nombre: "Viajes y Destinos del Mundo",
+      icono: "🧭",
+      color: "#0e7490",
+      notas: [
         {
-          cat:"Tendencia 2026",
-          tit:"Madeira: la isla sin temporada baja que enamora al mundo",
-          txt:"La isla portuguesa encabeza las listas de destinos del año por su primavera eterna —temperaturas entre 18 y 24 °C todo el año—, sus rutas de levada entre laurisilvas milenarias y una gastronomía que acaba de recibir dos estrellas Michelin nuevas. Lo que antes era destino de jubileos europeos se transformó en imán para nómadas digitales y senderistas jóvenes. Funchal fue designada Ciudad Europea de la Cultura 2026, lo que añade un calendario de conciertos y exposiciones de primer nivel.",
-          fuente:"Lonely Planet",
-          url:"https://www.lonelyplanet.com/best-in-travel"
+          cat: "Destino revelación",
+          tit: "Sri Lanka conquista el top de destinos 2026: templos, fauna salvaje y playas de ensueño en un solo país",
+          txt: "Las principales plataformas de viaje y guías especializadas coinciden: Sri Lanka es el destino del año por su combinación única de biodiversidad exuberante, patrimonio cultural milenario, gastronomía fascinante y precios accesibles para el viajero.",
+          fuente: "Expedia / Mejores destinos 2026",
+          url: "https://www.expedia.mx/magazine/destinos-en-tendencia-2026"
         },
         {
-          cat:"Sostenible",
-          tit:"Las Azores: el archipiélago que limita visitantes para no arruinarse",
-          txt:"Mientras el resto del mundo debate el exceso de turismo, las Azores tomaron una decisión radical: fijar un techo de visitantes por isla, con reservas obligatorias para rutas naturales y un impuesto de sostenibilidad que financia la restauración de ecosistemas locales. El resultado es uno de los destinos más impresionantes del Atlántico —volcanes, calderas, ballenas— sin aglomeraciones. Los viajeros que llegan describen la experiencia como 'Islandia con temperatura mediterránea'.",
-          fuente:"U.S. News Travel",
-          url:"https://travel.usnews.com/rankings/worlds-best-vacations/"
+          cat: "Turismo de montaña",
+          tit: "Las montañas arrasan en 2026: el 74% de los viajeros elige alturas para sus vacaciones",
+          txt: "Las búsquedas de alojamiento con 'vista a la montaña' crecieron un 103% a nivel global y siete de cada diez viajeros planean sus próximas vacaciones en entornos de alta montaña, buscando silencio, naturaleza y reconexión.",
+          fuente: "Homeexchange / Tendencias de viaje 2026",
+          url: "https://es.homeexchange.com/es/blog/las-12-tendencias-de-viaje-mas-destacadas-de-2026/"
         },
         {
-          cat:"Joya oculta",
-          tit:"Hokkaido en verano: Japón sin multitudes ni calor",
-          txt:"Mientras el resto de Japón sufre veranos de 35 °C y turistas masificados, Hokkaido ofrece temperaturas de 22 °C, los icónicos campos de lavanda de Furano en plena floración de julio, y parques nacionales de montaña casi vacíos. La isla norte japonesa tiene más área protegida per cápita que cualquier otra región del país y una cocina local —mariscos, lácteos, ramen de miso— considerada la mejor del archipiélago por los propios japoneses. Los vuelos directos desde Seúl y Shanghái la vuelven accesible para viajeros latinoamericanos con escala.",
-          fuente:"Top New Things",
-          url:"https://topnewthings.com/top-new-travel-destinations-2026/"
+          cat: "Turismo gastronómico",
+          tit: "El supermercado local como atracción turística: la nueva forma de conocer culturas en 2026",
+          txt: "El interés por explorar los mercados y supermercados locales como ventana auténtica a la cultura de cada destino creció un 78% en plataformas digitales, convirtiendo la compra cotidiana en una experiencia de inmersión cultural irresistible.",
+          fuente: "Abasturhub / Tendencias 2026",
+          url: "https://www.abasturhub.com/nota/turismo/tendencias-de-viaje-2026"
         }
       ]
     },
     {
-      nombre:"Arte, Música y Cultura", icono:"🎨", color:"#9d4edd",
-      notas:[
+      nombre: "Arte, Música y Cultura",
+      icono: "🎨",
+      color: "#9d4edd",
+      notas: [
         {
-          cat:"Música",
-          tit:"El Bossa Nova cumple 68 años y conquista una nueva generación",
-          txt:"La aparición del álbum 'Chega de Saudade' de João Gilberto en 1958 cambió para siempre la música popular. En 2026, plataformas como Spotify reportan que el Bossa Nova es el género musical de más rápido crecimiento entre oyentes de 18 a 30 años, con un aumento del 210% en reproducciones respecto a 2023. Artistas brasileños jóvenes como Dora Morelenbaum y Nana Caymmi reinterpretan el género con producción contemporánea, atrayendo audiencias globales que lo descubren por primera vez.",
-          fuente:"Global Citizen / Spotify",
-          url:"https://www.globalcitizen.org/en/content/how-music-is-changing-climate-conversations/"
+          cat: "Festival cultural",
+          tit: "Festival de Junio 2026 en Guatemala: 27 días y más de 60 eventos de arte, música, danza y cine para todos",
+          txt: "La Ciudad de Guatemala vive su mes cultural más vibrante del año con más de 60 actividades de acceso abierto que incluyen conciertos, obras de teatro, proyecciones y la gran gala final 'Guatemala de Siempre' el 28 de junio.",
+          fuente: "Guatemala.com / Festival de Junio 2026",
+          url: "https://eventos.guatemala.com/culturales/festival-de-junio-2026-ciudad-guatemala.html"
         },
         {
-          cat:"Patrimonio",
-          tit:"El Gran Museo Egipcio abre sus puertas completo tras 20 años",
-          txt:"El Gran Museo Egipcio, frente a las pirámides de Giza, inauguró finalmente la totalidad de sus 100.000 metros cuadrados de exposición, convirtiéndose en el museo de historia antigua más grande del mundo. La joya de la colección es la tumba completa de Tutankamón, con más de 5.000 objetos reunidos por primera vez en 3.300 años. La apertura total se produce 20 años después de que comenzara la construcción y generó en su primer mes más visitas que el Louvre de París.",
-          fuente:"BBC Culture",
-          url:"https://news.artnet.com/art-world/art-trends-2026-2738010"
+          cat: "Arte y educación",
+          tit: "61 estudiantes salvadoreños culminan su año de arte con música, dibujo y expresión creativa en el MUPI",
+          txt: "El Complejo Educativo Las Vueltas celebró en el Museo de la Palabra y la Imagen el cierre de un proyecto que usó el arte como herramienta de convivencia, demostrando que la cultura fortalece vínculos y abre caminos para la niñez.",
+          fuente: "ContraPunto / El Salvador",
+          url: "https://www.contrapunto.com.sv/cuando-el-arte-llega-a-la-escuela-estudiantes-de-las-vueltas-culminan-proceso-creativo-en-el-mupi/"
         },
         {
-          cat:"Cine",
-          tit:"Cannes 2026 premia a tres directoras en sus categorías principales",
-          txt:"El Festival de Cannes de este año marcó un hito histórico al otorgar la Palma de Oro, el Gran Premio del Jurado y el Premio de la Directora a tres mujeres en la misma edición, algo sin precedentes en los 79 años del festival. La ganadora de la Palma es la directora iraní Sepideh Farsi, con una película rodada en clandestinidad. El presidente del jurado destacó que 'la calidad simplemente habló por sí sola', en lo que muchos califican como un punto de inflexión en la industria.",
-          fuente:"Le Monde / Variety",
-          url:"https://news.artnet.com/art-world/art-trends-2026-2738010"
+          cat: "Música iberoamericana",
+          tit: "Ibermúsicas 2026 abre sus convocatorias: músicos de toda América Latina y España se proyectan al mundo",
+          txt: "El programa de cooperación musical iberoamericano financia formación y circulación internacional de artistas en música, letras, teatro y artes visuales, permitiendo que el talento de la región llegue a nuevos escenarios y mercados globales.",
+          fuente: "Argentina.gob.ar / Cultura Federal",
+          url: "https://www.argentina.gob.ar/noticias/cultura-federal-convocatorias-abiertas-al-miercoles-17-de-junio-de-2026"
         }
       ]
     },
     {
-      nombre:"Economía — Foco Argentina", icono:"📈", color:"#166534",
-      notas:[
+      nombre: "Economía y Finanzas",
+      icono: "📈",
+      color: "#166534",
+      notas: [
         {
-          cat:"Crecimiento",
-          tit:"Banco Mundial: Argentina crecerá 3,6% en 2026 y lidera la recuperación regional",
-          txt:"El informe de perspectivas del Banco Mundial de junio de 2026 ubica a Argentina entre las economías de mayor dinamismo de América Latina este año, con una proyección de crecimiento del PBI de 3,6%. De confirmarse, sería el tercer año consecutivo de expansión económica del país, algo que no ocurría desde 2006–2008. La entidad destacó la estabilización macroeconómica, la corrección del déficit fiscal y la recuperación del consumo privado como motores del crecimiento.",
-          fuente:"La Nación / Banco Mundial",
-          url:"https://www.lanacion.com.ar/economia/el-banco-mundial-pondera-el-crecimiento-de-la-economia-argentina-en-2026-nid08042026/"
+          cat: "Empleo",
+          tit: "España creó 583.000 empleos en el último año y prevé casi un millón más en dos años",
+          txt: "El PIB español creció un 2,7% interanual en el primer trimestre de 2026, con el empleo avanzando al 2,8% anual. BBVA Research eleva sus previsiones y anticipa la creación de casi un millón de puestos de trabajo entre 2025 y 2026.",
+          fuente: "BBVA Research / Situación España junio 2026",
+          url: "https://www.bbvaresearch.com/publicaciones/situacion-espana-junio-2026/"
         },
         {
-          cat:"Finanzas",
-          tit:"Riesgo país perfora los 425 puntos y los bonos argentinos suben 10% en junio",
-          txt:"A mediados de junio de 2026, el índice de riesgo país de Argentina bajó hasta 425 puntos básicos, el nivel más bajo desde 2018 y un descenso de más de 1.000 puntos respecto al pico de la crisis de 2022. En paralelo, los bonos soberanos en dólares acumularon una suba de 10% en lo que va del mes, reflejando la mayor confianza de los inversores en la sostenibilidad de la deuda. El acercamiento a los mercados internacionales de crédito abre la posibilidad de refinanciamiento a tasas más competitivas.",
-          fuente:"Infobae / Ámbito",
-          url:"https://www.infobae.com/economia/2026/06/16/el-riesgo-pais-cayo-debajo-de-los-500-puntos-por-primera-vez-desde-2019/"
+          cat: "Crecimiento europeo",
+          tit: "España lidera el crecimiento económico europeo en 2026: consumo, turismo y fondos EU como motores",
+          txt: "El consumo interno, la creación de empleo, la llegada de fondos de recuperación europeos y la transformación digital generan un entorno excepcionalmente favorable que sitúa a España como ejemplo positivo dentro de la eurozona.",
+          fuente: "Cámara de España / CaixaBank Research",
+          url: "https://www.camara.es/la-economia-espanola-mantiene-el-dinamismo-comienzos-de-2026"
         },
         {
-          cat:"Precios",
-          tit:"Inflación argentina podría quebrar la barrera del 2% mensual por primera vez desde 2021",
-          txt:"Las estimaciones preliminares de consultoras privadas y la UCEMA para el mes de junio de 2026 ubican la inflación mensual entre el 1,8% y el 2,1%, lo que marcaría la primera vez en más de cinco años que el índice se acerca o perfora el umbral del 2% mensual. La desaceleración sostenida —desde el 25% mensual de diciembre de 2023— es considerada el logro económico más significativo del período. Los economistas proyectan que de mantenerse, la inflación anual podría cerrar 2026 en torno al 30–35%.",
-          fuente:"UCEMA / El Cronista",
-          url:"https://ucema.edu.ar/investigacion/economia-argentina"
+          cat: "América Latina",
+          tit: "El Banco Mundial proyecta que Argentina crecerá 3,6% en 2026: entre las economías más dinámicas de la región",
+          txt: "El organismo internacional ubica a Argentina entre las 'excepciones positivas' de América Latina, impulsada por la estabilidad macroeconómica, el repunte del sector exportador y el regreso de la inversión privada.",
+          fuente: "La Nación / Banco Mundial 2026",
+          url: "https://www.lanacion.com.ar/economia/el-banco-mundial-pondera-el-crecimiento-de-la-economia-argentina-en-2026-nid08042026/"
         }
       ]
     },
     {
-      nombre:"Deporte que Inspira", icono:"🏅", color:"#ea580c",
-      notas:[
+      nombre: "Deporte que Inspira",
+      icono: "🏅",
+      color: "#ea580c",
+      notas: [
         {
-          cat:"Mundial 2026",
-          tit:"Messi marca un triplete histórico y se convierte en el máximo goleador de los Mundiales",
-          txt:"El 16 de junio, Lionel Messi anotó tres goles en el debut de Argentina ante Argelia (3-0), firmando el primer hat-trick de su carrera mundialista y superando con 16 goles a Miroslav Klose como el máximo artillero de la historia de los Mundiales. El estadio en Dallas explotó en el gol 16, y la ovación se repitió en todo el país. Argentina comanda el Grupo J con comodidad y Messi, a sus 38 años, vuelve a demostrar que es el jugador más importante de la competencia.",
-          fuente:"CNN Español / ESPN",
-          url:"https://cnnespanol.cnn.com/2026/06/17/deportes/live-news/resultado-argentina-argelia-mundial-2026-orix"
+          cat: "Mundial 2026",
+          tit: "Messi a los 38 años: el ícono que sigue inspirando generaciones en su último Mundial",
+          txt: "Lionel Messi protagonizó otra noche de leyenda en el Mundial 2026, demostrando que la grandeza no tiene edad y despertando la admiración de hinchas de todas las naciones, no solo de los argentinos, en el torneo más visto de la historia.",
+          fuente: "Infobae Deportes",
+          url: "https://www.infobae.com/deportes/2026/06/18/lionel-messi-el-gran-inspirador-argentino-que-quiere-ser-mejor-despues-de-ser-el-mejor/"
         },
         {
-          cat:"Deporte y bien",
-          tit:"Fútbol Más, el programa chileno que cambia vidas, gana el Laureus",
-          txt:"Fútbol Más usa el deporte como herramienta de inclusión social en barrios vulnerables de Chile, Colombia, Perú, Mozambique y España. Su método combina entrenamiento con mentorías, apoyo escolar y habilidades socioemocionales; los resultados muestran una reducción del 40% en deserción escolar entre sus participantes. El premio Laureus 'Sport for Good' —entregado en Madrid— es considerado el Nobel del deporte con propósito social, y es la primera vez que lo gana un programa latinoamericano.",
-          fuente:"Laureus / La Tercera",
-          url:"https://en.wikipedia.org/wiki/Laureus_Sport_for_Good_Award"
+          cat: "Historia y juventud",
+          tit: "Gilberto Mora, 17 años: el mexicano más joven de la historia en jugar un Mundial",
+          txt: "Con 17 años y 240 días, el delantero mexicano Gilberto Mora debutó en la Copa del Mundo y se convirtió en el jugador más joven del seleccionado azteca en disputar una Copa Mundial, en una actuación que emocionó a todo el país.",
+          fuente: "Eje Central / Copa Mundial 2026",
+          url: "https://www.ejecentral.com.mx/nuestro-eje/mundial-2026-cumple-una-semana-los-mejores-momentos-records-memes-lesiones-y-decepciones-del-torneo"
         },
         {
-          cat:"Atletismo",
-          tit:"Mondo Duplantis rompe su propio récord mundial de salto con pértiga",
-          txt:"El sueco Armand 'Mondo' Duplantis volvió a reescribir el límite humano en el salto con pértiga, superando la barrera de los 6,30 metros en el Mitin de Oslo. Es la decimotercera vez que el prodigioso atleta mejora su propio récord mundial, una racha sin precedentes en la historia del atletismo. A sus 26 años, los expertos calculan que aún puede mejorar entre 5 y 10 centímetros más antes de alcanzar su techo físico.",
-          fuente:"World Athletics",
-          url:"https://www.goodgoodgood.co/impact/sports"
+          cat: "Fanáticos del mundo",
+          tit: "Los fanáticos escoceses robaron el corazón del mundo: 10.000 hinchas cantando en el Fenway Park de Boston",
+          txt: "Más de 10.000 integrantes del 'Tartan Army' escocés tomaron el histórico estadio de béisbol de Boston, improvisaron canciones al ritmo de las tribunas de fútbol y se convirtieron en la historia viral más querida del Mundial 2026.",
+          fuente: "Yahoo Noticias / Momentos virales Mundial 2026",
+          url: "https://es-us.noticias.yahoo.com/los-7-mejores-momentos-virales-del-mundial-2026-hasta-el-momento-170029403.html"
         }
       ]
     },
     {
-      nombre:"Noticias de Argentina", icono:"🇦🇷", color:"#3a8dde",
-      notas:[
+      nombre: "Noticias de Argentina",
+      icono: "🇦🇷",
+      color: "#3a8dde",
+      notas: [
         {
-          cat:"Ciencia",
-          tit:"CONICET y Japón firman alianza para investigación conjunta",
-          txt:"El Consejo Nacional de Investigaciones Científicas y Técnicas firmó un memorando con la Japan Society for the Promotion of Science que abre financiamiento conjunto para proyectos en biotecnología, astrofísica y cambio climático. La alianza permite que investigadores argentinos accedan a laboratorios japoneses de primer nivel y viceversa, con becas de movilidad para hasta 80 científicos por año. Argentina se posiciona así como el principal socio científico de Japón en América del Sur.",
-          fuente:"CONICET",
-          url:"https://www.conicet.gov.ar/noticias-conicet/"
+          cat: "Ciencia",
+          tit: "El CONICET vuelve al océano profundo: la expedición anterior descubrió 40 especies nuevas y atrapadó a 92.000 espectadores en vivo",
+          txt: "Científicos argentinos del CONICET preparan su regreso a las profundidades oceáneas. La misión anterior fue un éxito histórico: identificaron más de 40 especies potencialmente nuevas para la ciencia y sus transmisiones en vivo llegaron a picos de 92.000 personas conectadas simultáneamente.",
+          fuente: "La Nación / CONICET junio 2026",
+          url: "https://www.lanacion.com.ar/sociedad/despues-de-conquistar-a-millones-de-espectadores-cientificos-del-conicet-volveran-a-explorar-el-nid08062026/"
         },
         {
-          cat:"Medio ambiente",
-          tit:"Misiones moviliza USD 420 millones para conservar su selva",
-          txt:"La provincia de Misiones, que alberga la mayor extensión de selva paranaense de Argentina, presentó un plan financiero con nueve mecanismos innovadores para conservar sus bosques nativos durante la próxima década. Entre ellos hay bonos de carbono verificados, pagos por servicios ecosistémicos a comunidades locales y fondos de la banca multilateral. La iniciativa fue diseñada con respaldo del Ministerio de Hacienda y se convierte en modelo para otras provincias forestales del país.",
-          fuente:"BIOFIN / Ministerio de Hacienda",
-          url:"https://www.biofin.org/argentina"
+          cat: "Investigación internacional",
+          tit: "Investigadora argentina de 34 años trabaja en Wageningen convirtiendo residuos vegetales en proteínas para el mundo",
+          txt: "Sofía Cano Alfañar realiza su doctorado en la prestigiosa Wageningen University & Research de Holanda, donde investiga cómo transformar residuos de plantas en proteínas de alta calidad para el consumo humano, en un campo que puede revolucionar la alimentación global.",
+          fuente: "La Nación / Ciencia y campo",
+          url: "https://www.lanacion.com.ar/economia/campo/tiene-34-anos-una-argentina-que-esta-en-una-prestigiosa-universidad-de-europa-realiza-una-nid22062026/"
         },
         {
-          cat:"Tecnología",
-          tit:"Satélite SAOCOM 2 de CONAE: Argentina en la vanguardia espacial",
-          txt:"La Comisión Nacional de Actividades Espaciales confirmó el avance en el desarrollo del SAOCOM 2, el segundo satélite de radar de apertura sintética de Argentina, que podrá monitorear inundaciones, incendios forestales y cultivos agrícolas con resolución de metros desde el espacio. El proyecto es íntegramente desarrollado por ingenieros argentinos y posiciona al país entre los pocos de América Latina con capacidad satelital propia de observación de la Tierra. Se espera su lanzamiento para finales de 2027.",
-          fuente:"CONAE / Infobae",
-          url:"https://noticiasambientales.com/science/argentina-launches-the-2025-2026-antarctic-summer-campaign-with-new-scientific-and-conservation-missions/"
+          cat: "Salud",
+          tit: "La mortalidad por cáncer de próstata cayó un 26% en Argentina en diez años: un logro silencioso pero enorme",
+          txt: "Entre 2014 y 2024, la tasa de mortalidad asociada al cáncer de próstata en Argentina se redujo un 26%, gracias a la mejora en diagnóstico temprano, tratamientos más efectivos y mayor acceso al sistema de salud en todo el país.",
+          fuente: "Ministerio de Salud de Argentina / CIME",
+          url: "http://cime.fcq.unc.edu.ar/noticias-del-ministerio-de-salud-argentina-junio-2026/"
         }
       ]
     }
