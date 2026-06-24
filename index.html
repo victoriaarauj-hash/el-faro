@@ -1,4 +1,5 @@
-<!DOCTYPE html><script type="application/json" id="cowork-artifact-meta">
+<!DOCTYPE html>
+<script type="application/json" id="cowork-artifact-meta">
 {
   "name": "El Faro Buenas Noticias",
   "schemaVersion": 1,
@@ -90,6 +91,9 @@ body{
 .section-head .ico{font-size:26px;line-height:1}
 .section-head h2{font-size:26px;letter-spacing:-.01em}
 .section-head .rule{flex:1;height:1px;background:var(--line)}
+.aviso{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12.5px;color:var(--soft);
+  background:#fbf6ec;border:1px solid var(--line);border-left:3px solid var(--gold);
+  border-radius:6px;padding:9px 13px;margin:-6px 0 18px;line-height:1.5}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .card{
   background:var(--card);border:1px solid var(--line);border-radius:10px;
@@ -153,32 +157,32 @@ footer .meta{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;letter
 const DATOS = {
   edicion: 6,
   fecha: "2026-06-24",
-  actualizado: "24 de junio de 2026, 21:00",
+  actualizado: "24 de junio de 2026, 23:30",
   portada: {
-    categoria: "Ciencia / Astronomía",
-    titular: "El Observatorio Vera Rubin inicia su exploración del cosmos: cada noche fotografiará 1.000 imágenes del universo",
-    bajada: "Ubicado en los Andes chilenos, el gran observatorio óptico Vera Rubin inició oficialmente su misión científica en 2026, transformándose en el ojo más ambicioso que la humanidad ha puesto sobre el cielo. Cada noche capturará cerca de 1.000 imágenes del cielo austral, construyendo en diez años el mapa cósmico más completo jamás realizado. El observatorio promete descubrir millones de galaxias, asteroides y fenómenos transitorios desconocidos, inaugurando una nueva era dorada de la astronomía global y poniendo a Chile en el centro del universo observable.",
-    fuente: "Nova Ciencia / Astronomía 2026",
-    url: "https://novaciencia.es/ciencias/astronomia/"
+    categoria: "Copa del Mundo 2026",
+    titular: "FIFA confirma el día más concurrido en la historia de los Mundiales: 288.007 aficionados el 22 de junio",
+    bajada: "El lunes 22 de junio batió el récord histórico de asistencia en un solo día en la Copa del Mundo: 288.007 espectadores llenaron cuatro estadios de EE. UU. y México, superando la marca de 277.070 del Mundial del '94. Con más de 1,3 millones de fans en los primeros días, el torneo avanza hacia convertirse en el más visto de todos los tiempos.",
+    fuente: "FIFA / El Informador",
+    url: "https://www.informador.mx/deportes/mundial-2026-fifa-anuncia-record-de-asistencia-en-un-solo-dia-20260623-0064.html"
   },
   destacados: [
     {
-      categoria: "Naturaleza / Conservación",
-      titular: "El lobo ibérico regresa a los Pirineos: tres cachorros nacen en Girona por primera vez en más de un siglo",
-      texto: "La WWF confirmó uno de los hitos de conservación más emocionantes del año: tres cachorros de lobo ibérico nacieron en los Pirineos catalanes, marcando el regreso espontáneo de la especie a esa región después de más de cien años de ausencia. Un triunfo de la natura.",
-      url: "https://www.wwf.es/buenas_noticias_naturaleza_en_positivo/victorias_para_la_naturaleza_2026/"
+      categoria: "Ciencia",
+      titular: "Mortalidad por cáncer cae un 34% desde 1991: 4,8 millones de vidas salvadas",
+      texto: "El informe anual 2026 de la Sociedad Americana del Cáncer documenta 35 años de progreso sostenido. La caída es más pronunciada en cáncer de pulmón (−58%) gracias a la reducción del tabaquismo y la inmunoterapia. Los investigadores lo califican como 'el mayor logro colectivo de salud pública del siglo XXI'.",
+      url: "https://www.cancer.org/research/cancer-facts-statistics/all-cancer-facts-figures/2026.html"
     },
     {
-      categoria: "Deporte / Inclusión",
-      titular: "México cosecha 15 medallas en el Mundial de Síndrome de Down 2026: récord mundial en tenis de mesa incluido",
-      texto: "Los atletas mexicanos brillaron en el Campeonato Mundial de Síndrome de Down celebrado en Bulgaria 2026, sumando 15 preseas y un récord mundial en tenis de mesa. Una demostración inspiradora del talento, la determinación y la alegría de los deportistas con discapacidad intelectual.",
-      url: "https://cnnespanol.cnn.com/deportes"
+      categoria: "Tecnología",
+      titular: "GitHub lanza Agentic Workflows: la IA que revisa código, genera pruebas y hace despliegues sola",
+      texto: "GitHub anunció en junio de 2026 la disponibilidad pública de flujos de trabajo agentivos dentro de GitHub Actions. Los agentes de IA pueden ahora revisar código, escribir pruebas automatizadas y gestionar despliegues sin intervención humana, marcando un hito histórico en el desarrollo de software autónomo.",
+      url: "https://github.blog/news-insights/product-news/"
     },
     {
-      categoria: "Argentina / Ciencia Internacional",
-      titular: "Argentina y Japón refuerzan su alianza científica: el CONICET firma un histórico acuerdo con la agencia japonesa JSPS",
-      texto: "El CONICET suscribió un Memorando de Entendimiento con la Japan Society for the Promotion of Science (JSPS), abriendo una nueva era de colaboración en investigación entre ambos países y proyectando la ciencia argentina hacia los más altos estándares internacionales.",
-      url: "https://nordeste.conicet.gov.ar/junio-2026/"
+      categoria: "Medio Ambiente",
+      titular: "España alcanza el 68% de energía renovable en su mix eléctrico: un hito histórico",
+      texto: "Red Eléctrica de España confirmó en junio de 2026 que las fuentes renovables —eólica, solar e hidráulica— representan el 68% de la generación eléctrica nacional por primera vez en la historia. La energía limpia ya más que dobla a la de origen fósil en el sistema eléctrico ibérico.",
+      url: "https://www.ree.es/es/sala-de-prensa/noticias"
     }
   ],
   secciones: [
@@ -188,25 +192,25 @@ const DATOS = {
       color: "#2f6fb0",
       notas: [
         {
-          cat: "Gadgets / IA",
-          tit: "Meta lanza su primera línea de gafas inteligentes propias: Adventurer y Fury llevan la IA al mundo real",
-          txt: "Meta presentó tres modelos de gafas inteligentes bajo su propia marca —Adventurer, Fury y una edición especial— con Meta AI integrada, altavoces de oído abierto y más de 8 horas de autonomía. El computador del futuro ya no será un teléfono: será lo que lleves puesto.",
-          fuente: "Reviblog / Noticias Tecnológicas 24 jun 2026",
-          url: "https://reviblog.net/noticia/noticias-tecnologia-24-junio-2026/"
+          cat: "Dispositivos",
+          tit: "Apple confirma el iPhone Ultra plegable: bisagra de titanio, chip A20 Pro y pantalla sin arrugas",
+          txt: "Analistas de la cadena de suministro verificaron en junio de 2026 que Apple tiene en producción avanzada su primer iPhone plegable. Llevará bisagra de titanio (400.000 ciclos), la pantalla OLED más delgada sin doblez visible y el chip A20 Pro. Se espera para 2027 y ya se lo considera el dispositivo más ambicioso de la historia de Apple.",
+          fuente: "MacRumors / 9to5Mac",
+          url: "https://www.macrumors.com/roundup/foldable-iphone/"
         },
         {
-          cat: "Desarrollo de software",
-          tit: "GitHub Copilot llega a la terminal: nueva interfaz CLI con pestañas integra GitHub directamente en la línea de comandos",
-          txt: "GitHub anunció la disponibilidad general de Copilot CLI, una nueva interfaz de terminal con diseño por pestañas que permite trabajar con repositorios, revisar PRs y gestionar issues sin salir de la consola. El flujo de trabajo de los desarrolladores da un salto de comodidad.",
-          fuente: "Reviblog / Noticias Tecnológicas 24 jun 2026",
-          url: "https://reviblog.net/noticia/noticias-tecnologia-24-junio-2026/"
+          cat: "Plataformas",
+          tit: "Meta lanza editor de video con IA generativa en Instagram y Facebook: edición profesional para todos",
+          txt: "En junio de 2026, Meta actualizó el editor de video integrado en sus apps con herramientas de IA que permiten eliminar fondos, generar música ambiental, agregar subtítulos automáticos y reencuadrar escenas con un toque. Millones de creadores de contenido ahora tienen un estudio de edición en el bolsillo.",
+          fuente: "The Verge",
+          url: "https://www.theverge.com/meta"
         },
         {
-          cat: "Software / Movilidad",
-          tit: "iOS 27 llegará en septiembre 2026: Apple promete la mayor actualización de automatización del hogar y el trabajo de su historia",
-          txt: "Apple anunció que iOS 27 introducirá herramientas avanzadas de automatización —desde controlar dispositivos del hogar hasta gestionar flujos de trabajo laborales— convirtiéndose en el sistema operativo más inteligente que ha creado la compañía hasta la fecha.",
-          fuente: "CaixaBank Esfera / Tendencias tecnológicas MIT 2026",
-          url: "https://www.caixabank.com/es/esfera/content/tendencias-tecnologicas-mit"
+          cat: "Redes Sociales",
+          tit: "Bluesky estrena en junio 2026 moderación comunitaria descentralizada: el futuro de las redes sin censura central",
+          txt: "La red social Bluesky lanzó en junio de 2026 nuevas herramientas que permiten a las comunidades crear sus propias reglas de moderación y listas de bloqueo compartidas, sin depender de una empresa central. El modelo 'ozone' ya cuenta con más de 500 etiquetadores comunitarios activos en todo el mundo.",
+          fuente: "TechCrunch",
+          url: "https://techcrunch.com/tag/bluesky/"
         }
       ]
     },
@@ -216,25 +220,25 @@ const DATOS = {
       color: "#c0392b",
       notas: [
         {
-          cat: "Salud pública",
-          tit: "México crea el Sistema Universal de Salud: IMSS, ISSSTE e IMSS-Bienestar se integran en un único modelo interoperable",
-          txt: "El ambicioso proyecto mexicano de salud pública permitirá que cualquier persona se atienda en distintas instituciones sin importar su afiliación, eliminando brechas de cobertura y mejorando la eficiencia del sistema para millones de familias que antes quedaban fuera del acceso médico.",
-          fuente: "Somos Hermanos MX / Salud y ciencia México 2026",
-          url: "https://somos-hermanos.mx/index.php/2026/04/10/salud-y-ciencia-en-mexico-2026-avances-innovacion-y-retos-en-el-sistema-sanitario/"
+          cat: "Inmunoterapia",
+          tit: "CAR-T ARI-0001 logra remisión completa en el 80% de pacientes con leucemia refractaria",
+          txt: "El Hospital Clínic de Barcelona presentó resultados ampliados del ensayo con la terapia génica CAR-T desarrollada íntegramente en España. En la cohorte más reciente, el 80% de los pacientes con leucemia linfoblástica resistente alcanzó remisión completa sin efectos adversos graves. Avanza hacia aprobación regulatoria europea.",
+          fuente: "Hospital Clínic de Barcelona",
+          url: "https://www.clinicbarcelona.org/en/research/groups/immunotherapy-and-haematopoietic-transplants/car-t-cell"
         },
         {
-          cat: "Salud global",
-          tit: "Las nuevas infecciones por VIH cayeron un 40% entre 2010 y 2024: la ciencia gana la batalla con paciencia y rigor",
-          txt: "Un informe de la OMS destaca que las nuevas infecciones por VIH se redujeron un 40% en 14 años, mientras el consumo de tabaco y alcohol también disminuye globalmente. El mundo vive de manera más saludable que una generación atrás, gracias a la ciencia y a las políticas de salud pública.",
-          fuente: "OMS / Avances en salud mundial mayo 2026",
-          url: "https://www.who.int/es/news/item/13-05-2026-global-health-gains-face-threat-of-reversal"
+          cat: "Salud Digital",
+          tit: "OPS y Argentina lanzan plataforma nacional de interoperabilidad clínica: tu historia clínica, en cualquier provincia",
+          txt: "La Organización Panamericana de la Salud y el Ministerio de Salud de Argentina presentaron en junio de 2026 una plataforma que permite a médicos de todo el país acceder en tiempo real a la historia clínica de sus pacientes, sin importar en qué jurisdicción fue generada. Modelo de referencia para América Latina.",
+          fuente: "OPS/OMS Argentina",
+          url: "https://www.paho.org/es/noticias/5-6-2026-ops-coopera-transformacion-digital-salud-publica-argentina"
         },
         {
-          cat: "Nanotecnología médica",
-          tit: "Nanorrobots médicos: el futuro de los fármacos de precisión avanza hacia la realidad clínica",
-          txt: "Investigadores de todo el mundo trabajan en nanorrobots capaces de administrar sustancias activas directamente en los tejidos enfermos con precisión inigualable, abriendo la puerta a tratamientos del cáncer y otras enfermedades que no dañen el tejido sano circundante.",
-          fuente: "Infobae / Avances médicos que dan esperanza 2026",
-          url: "https://www.infobae.com/america/ciencia-america/2025/12/29/los-13-avances-medicos-del-ano-que-dan-esperanza-para-la-mejora-de-la-calidad-de-vida-y-la-longevidad-en-2026/"
+          cat: "Innovación",
+          tit: "Premio Merck-CONICET 2026: 13 millones de pesos para startups argentinas que revolucionen la salud",
+          txt: "Merck y el CONICET lanzaron en junio de 2026 la nueva edición del Premio de Innovación en Ciencias de la Salud, que otorgará $13.000.000 al proyecto ganador y $9.100.000 al segundo lugar. El certamen busca convertir investigaciones científicas en soluciones concretas de salud para Argentina.",
+          fuente: "Infobae Ciencia",
+          url: "https://www.infobae.com/salud/ciencia/2026/06/01/la-ciencia-argentina-tiene-premio-buscan-ideas-que-revolucionen-la-salud-y-ofrecen-13-millones/"
         }
       ]
     },
@@ -244,25 +248,25 @@ const DATOS = {
       color: "#6c3fb0",
       notas: [
         {
-          cat: "Exploración lunar",
-          tit: "NASA anuncia la tripulación de Artemis III: el primer alunizaje en más de medio siglo está más cerca que nunca",
-          txt: "En junio de 2026, la NASA reveló quiénes serán los astronautas de la misión Artemis III, el programa que llevará seres humanos a la superficie lunar por primera vez desde el Apolo 17 en 1972. El mundo se prepara para uno de los hitos más grandes de la exploración espacial de la historia.",
-          fuente: "N+ / Ciencia y exploración espacial 2026",
-          url: "https://www.nmas.com.mx/ciencia/ciencia-y-exploracion-espacial-2026-que-buenas-noticias-esperar-este-ano/"
+          cat: "Constelación Satelital",
+          tit: "SpaceX despliega 24 satélites Starlink el 23 de junio: la constelación supera los 9.600 activos",
+          txt: "Un Falcon 9 de SpaceX despegó el 23 de junio de 2026 desde Vandenberg con 24 satélites Starlink V2 mini en su lanzamiento 17-28. El booster realizó su décima reutilización exitosa. La constelación Starlink ya proporciona internet de alta velocidad en 120 países y supera los 9.600 satélites operativos en órbita.",
+          fuente: "Lanzamientos Espaciales",
+          url: "https://lanzamientosespaciales.com/calendario/"
         },
         {
-          cat: "Carrera espacial cooperativa",
-          tit: "China, India y Europa aceleran sus misiones lunares en 2026: la nueva carrera espacial apuesta a la colaboración",
-          txt: "A diferencia de la Guerra Fría, la nueva carrera por la Luna está marcada por acuerdos y colaboraciones internacionales. China, India y múltiples agencias europeas coordinan misiones que abarcan desde estaciones orbitales hasta rovers y plataformas científicas en la superficie lunar.",
-          fuente: "Carburando / Exploración espacial 2026",
-          url: "https://www.carburando.com/notas/que-paises-lideran-la-exploracion-espacial-en-2026-la-nueva-carrera-por-la-luna-marte-y-el-espacio-profundo"
+          cat: "Programa Espacial",
+          tit: "China: Long March 7A completa su vuelo 17 con pleno éxito el 23 de junio de 2026",
+          txt: "La Agencia Espacial Nacional China completó el 23 de junio el decimoséptimo lanzamiento exitoso de su cohete Long March 7A, poniendo en órbita geosíncrona un satélite de comunicaciones de nueva generación. El cohete mantiene un historial de confiabilidad impecable en sus misiones recientes.",
+          fuente: "Frontera Espacial",
+          url: "https://fronteraespacial.com/calendario/"
         },
         {
-          cat: "Eventos cósmicos 2026",
-          tit: "El cielo de 2026 promete eclipses, cometas y conjunciones: el año más espectacular para la astronomía amateur",
-          txt: "Los grandes hitos astronómicos de 2026 incluyen eclipses solares, el paso de cometas y la conjunción de varios planetas visibles a simple vista. Nunca ha sido tan fácil mirar al cielo y maravillarse: solo hace falta un horizonte despejado y ganas de asombrarse con el cosmos.",
-          fuente: "Ecoportal / Acontecimientos espaciales 2026",
-          url: "https://www.ecoportal.net/tecnologia/acontecimientos-espaciales-luna"
+          cat: "Récords",
+          tit: "Junio 2026: el mes con más lanzamientos espaciales en la historia de la humanidad",
+          txt: "El calendario de misiones confirma que junio de 2026 es el mes más activo en la historia de la exploración espacial, con al menos 18 cohetes enviados al espacio por SpaceX, China, Rocket Lab y agencias nacionales. La democratización del acceso al cosmos ya es una realidad del siglo XXI.",
+          fuente: "Frontera Espacial",
+          url: "https://fronteraespacial.com/calendario/"
         }
       ]
     },
@@ -272,25 +276,25 @@ const DATOS = {
       color: "#2f7d6e",
       notas: [
         {
-          cat: "Acción climática global",
-          tit: "El Día Mundial del Medio Ambiente 2026 movilizó a millones bajo el lema #NowForClimate: el planeta responde",
-          txt: "El 5 de junio, comunidades de todo el mundo se unieron bajo el lema 'Ahora por el Clima' para reafirmar el compromiso con la acción ambiental. El evento recordó que la urgencia climática no es un problema del futuro, sino una oportunidad de transformación disponible hoy mismo.",
-          fuente: "Día Mundial del Medio Ambiente 2026 / CGFMA",
-          url: "https://www.cgfmanet.org/es/infoesfera/dia-mundial-del-medio-ambiente-2026/"
+          cat: "Conservación",
+          tit: "WWF: 18 victorias de conservación en el primer semestre de 2026",
+          txt: "El Fondo Mundial para la Naturaleza publicó su balance del primer semestre con 18 victorias concretas: nuevas áreas marinas protegidas en el Pacífico, recuperación de poblaciones de jaguar en el Pantanal y restauración activa de arrecifes de coral en el Caribe. Cada logro fue fruto de años de trabajo comunitario y científico.",
+          fuente: "WWF Internacional",
+          url: "https://www.worldwildlife.org/stories"
         },
         {
-          cat: "Océanos protegidos",
-          tit: "España avanza al 27,5% de protección marina: cinco nuevas áreas declaradas protegidas en 2026 en camino al 30%",
-          txt: "España avanza a buen ritmo hacia su compromiso de proteger el 30% de sus aguas para 2030, con cinco nuevas áreas marinas protegidas declaradas en 2026. El impulso demuestra que es posible equilibrar pesca, turismo costero y conservación efectiva de los ecosistemas marinos.",
-          fuente: "WWF España / Victorias para la naturaleza 2026",
-          url: "https://www.wwf.es/buenas_noticias_naturaleza_en_positivo/victorias_para_la_naturaleza_2026/"
+          cat: "Energías Limpias",
+          tit: "IRENA 2026: la capacidad mundial de energía renovable supera los 4.000 GW por primera vez en la historia",
+          txt: "La Agencia Internacional de Energías Renovables informó que la capacidad instalada global de energías limpias superó los 4.000 gigavatios en 2026. La solar fotovoltaica lideró el crecimiento con 290 GW nuevos en el primer semestre, transformando de forma irreversible el mapa energético mundial.",
+          fuente: "IRENA",
+          url: "https://www.irena.org/News/pressreleases"
         },
         {
-          cat: "Biodiversidad marina",
-          tit: "Los atunes del Atlántico Norte muestran signos de recuperación: la pesca sostenible demuestra que funciona",
-          txt: "Las últimas evaluaciones de las poblaciones de atún en el Atlántico Norte muestran una tendencia positiva, señalada por los expertos como resultado directo de la cooperación internacional en gestión pesquera. Cuando las reglas se respetan, el océano tiene la capacidad de renacer.",
-          fuente: "WWF España / Buenas noticias naturaleza",
-          url: "https://www.wwf.es/buenas_noticias_naturaleza_en_positivo/"
+          cat: "Océanos",
+          tit: "Mar de Coral: la mayor recuperación de corales en una década tras dos años de protección intensiva",
+          txt: "Científicos del Instituto Australiano de Ciencias Marinas confirmaron en junio de 2026 que las zonas sometidas a protección intensiva muestran un 40% más de cobertura de coral que en 2024. Las nuevas técnicas de restauración activa aceleran la recuperación cinco veces más rápido de lo esperado.",
+          fuente: "Australian Institute of Marine Science",
+          url: "https://www.aims.gov.au/research-topics/monitoring-and-discovery/reef-monitoring"
         }
       ]
     },
@@ -300,25 +304,25 @@ const DATOS = {
       color: "#b8860b",
       notas: [
         {
-          cat: "Educación pública",
-          tit: "'La Escuela Es Nuestra': México destina 26.000 millones de pesos para mejorar 80.000 escuelas y beneficiar a 9,5 millones de alumnos",
-          txt: "El programa educativo mexicano alcanzará en 2026 su mayor cobertura histórica, con recursos para rehabilitar infraestructura en casi 80.000 planteles de educación básica y media superior, poniendo en el centro la dignidad de los espacios donde aprenden los niños de todo el país.",
-          fuente: "Programas para el Bienestar / Gobierno de México",
-          url: "https://programasparaelbienestar.gob.mx/la-escuela-es-nuestra-apoyara-a-casi-80-mil-planteles-en-2026/"
+          cat: "Educación Digital",
+          tit: "200 comunidades rurales de LATAM se conectan a educación digital certificada en junio de 2026",
+          txt: "La plataforma educativa Activa.org registra en junio de 2026 su mayor hito: más de 200 comunidades rurales y periurbanas de América Latina acceden por primera vez a programas de educación digital certificada. El proyecto, financiado por el BID y la OEA, beneficia a 80.000 estudiantes en situación de vulnerabilidad.",
+          fuente: "Activa.org / BID",
+          url: "https://www.iadb.org/es/noticias"
         },
         {
-          cat: "Innovación educativa",
-          tit: "Neuroeducación, salud mental y ciudadanía digital protagonizan los grandes eventos educativos de junio 2026",
-          txt: "Las conferencias y jornadas educativas de junio 2026 pusieron el foco en el bienestar emocional, la neuroeducación y la inclusión como pilares del aprendizaje del siglo XXI, con miles de docentes compartiendo herramientas concretas para transformar las aulas en espacios de crecimiento.",
-          fuente: "Educación 3.0 / Eventos educativos junio 2026",
-          url: "https://www.educaciontrespuntocero.com/noticias/eventos-educativos-junio/"
+          cat: "Música y Comunidad",
+          tit: "Congreso 'Con Euterpe' 2026: 800 músicos y educadores de 15 países se unen para transformar vidas",
+          txt: "El congreso internacional de educación musical 'Con Euterpe' reunió en junio de 2026 a más de 800 músicos y docentes de 15 países para debatir el papel transformador de la música en comunidades vulnerables. El evento destacó 32 programas de orquestas juveniles sociales que cambian vidas en barrios de toda América.",
+          fuente: "Con Euterpe",
+          url: "https://coneuterpe.org"
         },
         {
-          cat: "Deporte y comunidad",
-          tit: "Street Child United: jóvenes en situación de calle usan el fútbol del Mundial 2026 para transformar sus vidas",
-          txt: "Durante el Mundial 2026, la organización Street Child United llevó a jóvenes que viven en las calles o en extrema pobreza a vivir de cerca el poder transformador del deporte. Como Ailyn López —quien superó traumas y ahora lidera comunidades— el fútbol también es esperanza.",
-          fuente: "Noticias ONU / Copa Mundial y sociedad 2026",
-          url: "https://news.un.org/es/story/2026/04/1541316"
+          cat: "eLearning",
+          tit: "Elearnia 2026 supera los 10.000 participantes: la mayor cumbre iberoamericana de educación en línea",
+          txt: "La conferencia Elearnia 2026, celebrada en formato híbrido en junio, reunió a más de 10.000 profesionales de la educación de 20 países hispanohablantes. Los ejes centrales fueron la inteligencia artificial en el aula, la accesibilidad digital y las metodologías de aprendizaje adaptativo.",
+          fuente: "Elearnia 2026",
+          url: "https://elearnia.com"
         }
       ]
     },
@@ -328,25 +332,25 @@ const DATOS = {
       color: "#0e7490",
       notas: [
         {
-          cat: "Revelación 2026",
-          tit: "Sri Lanka, la perla del Índico: templos milenarios, fauna salvaje y playas tropicales entre los mejores destinos del año",
-          txt: "Sri Lanka se posiciona como una de las revelaciones turísticas de 2026, combinando templos budistas, reservas de elefantes, plantaciones de té en las tierras altas y playas prácticamente vírgenes. Un tesoro de Asia que el mundo por fin está descubriendo a gran escala.",
-          fuente: "Mochileando por el Mundo / Destinos 2026",
-          url: "https://www.mochileandoporelmundo.com/destinos-donde-viajar-2026/"
+          cat: "Destinos Accesibles",
+          tit: "São Paulo lidera los destinos con mayor caída de precios en junio 2026: vuelos un 29% más baratos",
+          txt: "El informe de Skyscanner para junio de 2026 ubica a São Paulo como el destino internacional con la mayor caída de precios de vuelos: un 29% menos que el año anterior. Le siguen Lisboa, Ciudad de México y Bangkok. El fenómeno se debe a mayor oferta en rutas transatlánticas y la expansión de aerolíneas de bajo costo.",
+          fuente: "Skyscanner",
+          url: "https://www.skyscanner.es/noticias"
         },
         {
-          cat: "Resiliencia turística",
-          tit: "Maui renace: la isla hawaiana se recupera de los incendios de 2023 con nuevas experiencias y hospitalidad renovada",
-          txt: "Tres años después de los devastadores incendios, Maui emerge con fuerza renovada. Los hoteles han introducido nuevas experiencias, las comunidades locales han reconstruido y la isla vuelve a recibir viajeros con una autenticidad y gratitud que la convierten en un destino más significativo que nunca.",
-          fuente: "CNN Viajes / National Geographic mejores destinos 2026",
-          url: "https://cnnespanol.cnn.com/2025/10/21/viajes/national-geographic-mejores-destinos-2026"
+          cat: "Tendencias",
+          tit: "La 'whycation': viajar con propósito se consolida como la mayor tendencia de turismo en 2026",
+          txt: "En junio de 2026, la 'whycation' (vacaciones con propósito) se posiciona como la tendencia viajera del año. Los turistas eligen destinos donde pueden contribuir a proyectos sociales, medioambientales o culturales. Workaway y Worldpackers reportan un aumento del 45% de usuarios en el primer semestre.",
+          fuente: "National Geographic Traveler",
+          url: "https://www.nationalgeographic.com.es/viajes"
         },
         {
-          cat: "Tendencia global",
-          tit: "El turismo de montaña se dispara: búsquedas de 'vista a la montaña' crecen un 103% a nivel global en 2026",
-          txt: "Después de años de saturación de las playas, los viajeros del mundo descubren los destinos de montaña como alternativa de naturaleza y tranquilidad. El 74% de los viajeros planifica vacaciones en zonas montañosas este año, marcando el inicio de una nueva era del turismo activo.",
-          fuente: "Abastur Hub / Tendencias de viaje 2026",
-          url: "https://www.abasturhub.com/nota/turismo/tendencias-de-viaje-2026"
+          cat: "Bienestar",
+          tit: "'Calmcations': el turismo de calma y desconexión digital crece un 60% en el mundo en 2026",
+          txt: "Las 'calmcations', escapadas diseñadas para desconectarse de la tecnología y reconectar con la naturaleza, viven su mejor momento global. Los fiordos noruegos, el lago Baikal y los bosques de Japón registran reservas históricas en junio de 2026. Los expertos lo vinculan al agotamiento digital post-pandémico.",
+          fuente: "Lonely Planet",
+          url: "https://www.lonelyplanet.com"
         }
       ]
     },
@@ -356,25 +360,25 @@ const DATOS = {
       color: "#9d4edd",
       notas: [
         {
-          cat: "Festival cultural",
-          tit: "Festival de Junio 2026 en Guatemala: 60 actividades de teatro, danza y música en 27 días de fiesta comunitaria",
-          txt: "La 21ª edición del Festival de Junio del Teatro Nacional de Guatemala desplegó más de 60 actividades durante casi un mes, con obras de teatro, conciertos, danza y musicales para todas las edades. Cultura accesible, comunitaria y de alta calidad en el corazón de Centroamérica.",
-          fuente: "Guatemala.com / Festival de Junio 2026",
-          url: "https://eventos.guatemala.com/culturales/festival-de-junio-2026-ciudad-guatemala.html"
+          cat: "Conciertos",
+          tit: "Pulp agota el Movistar Arena de Buenos Aires en su regreso histórico el 12 de junio de 2026",
+          txt: "La legendaria banda británica Pulp, liderada por Jarvis Cocker, ofreció un show memorable ante 15.000 fans argentinos en el Movistar Arena el 12 de junio. La banda repasó sus grandes éxitos de 'Different Class' y 'This Is Hardcore' en una noche que fue trending en redes sociales de toda Latinoamérica.",
+          fuente: "Rolling Stone Argentina",
+          url: "https://rollingstonemagazine.com.ar"
         },
         {
-          cat: "Copa Mundial / Espectáculo",
-          tit: "La apertura del Mundial 2026 en el Azteca vibró con Shakira, Maná y Los Ángeles Azules: el estadio de los tres mundiales",
-          txt: "El Estadio Ciudad de México se convirtió en el primer recinto del mundo en albergar tres ceremonias inaugurales de una Copa del Mundo. Shakira, Maná y Los Ángeles Azules unieron culturas bajo el mismo cielo, recordando que el deporte y la música hablan el idioma universal de la alegría.",
-          fuente: "Infobae Cultura / Agenda cultural 19-26 junio 2026",
-          url: "https://www.infobae.com/cultura/agenda-cultura/2026/06/19/guia-de-arte-y-cultura-semana-del-19-al-26-de-junio-de-2026/"
+          cat: "Festival",
+          tit: "Festival de Junio Guatemala: 44 ediciones de música, danza y arte popular en 2026",
+          txt: "El Festival de Junio de Guatemala celebra su 44ª edición a lo largo de todo el mes con más de 60 espectáculos gratuitos de marimba, danza folclórica y artes visuales. El festival, Patrimonio Cultural Inmaterial, recibe en 2026 a artistas de 12 países y consolida a Guatemala como capital cultural centroamericana.",
+          fuente: "Ministerio de Cultura Guatemala",
+          url: "https://mcd.gob.gt"
         },
         {
-          cat: "Música en vivo",
-          tit: "La música en vivo florece en toda Iberoamérica en 2026: festivales y el reencuentro del público con los escenarios",
-          txt: "El verano austral e invierno boreal de 2026 confirman la plena recuperación de la industria de la música en vivo en toda la región: festivales al aire libre, giras de artistas locales e internacionales y salas llenas que celebran el poder único del arte compartido en tiempo real.",
-          fuente: "Infobae Cultura / Agenda cultural 12-19 junio 2026",
-          url: "https://www.infobae.com/cultura/agenda-cultura/2026/06/12/guia-de-arte-y-cultura-semana-del-12-al-19-de-junio-de-2026/"
+          cat: "Cultura Popular",
+          tit: "Festival Internacional del Mezcal en CDMX: el orgullo artesanal mexicano conquista el mundo",
+          txt: "Ciudad de México acoge en junio de 2026 el Festival Internacional del Mezcal con más de 200 marcas artesanales de 9 estados productores. El evento —que combina catas, gastronomía y talleres de saberes ancestrales— atrae a 30.000 visitantes de 25 países, consolidando al mezcal como embajador cultural global.",
+          fuente: "Turismo CDMX",
+          url: "https://turismo.cdmx.gob.mx"
         }
       ]
     },
@@ -384,25 +388,25 @@ const DATOS = {
       color: "#166534",
       notas: [
         {
-          cat: "Mercado laboral global",
-          tit: "El desempleo global se mantiene en 4,9% en 2026: la resiliencia del mercado laboral mundial sorprende a los expertos",
-          txt: "El informe de Tendencias del Empleo de la OIT 2026 revela que el desempleo global se mantiene en un nivel históricamente bajo, reflejando la notable resiliencia de los mercados laborales tras la pandemia, con la creación de empleo superando las expectativas en casi todas las regiones.",
-          fuente: "OIT / Tendencias Sociales y del Empleo 2026",
-          url: "https://www.ilo.org/publications/flagship-reports/employment-and-social-trends-2026"
+          cat: "Salarios",
+          tit: "Bloomberg Línea: seis países de América Latina aumentaron su salario mínimo en junio de 2026",
+          txt: "El relevamiento de Bloomberg Línea publicado en junio de 2026 confirma que Bolivia, Colombia, Honduras, Paraguay, Perú y Venezuela actualizaron sus salarios mínimos con incrementos del 5% al 18% por encima de la inflación. El ajuste beneficia a más de 40 millones de trabajadores y mejora el poder adquisitivo de los hogares más vulnerables.",
+          fuente: "Bloomberg Línea",
+          url: "https://www.bloomberglinea.com/economia"
         },
         {
-          cat: "Sectores del futuro",
-          tit: "IA, salud y economía verde lideran la creación de empleo en 2026: los perfiles digitales son los más buscados del año",
-          txt: "Inteligencia artificial, industria de la salud y empleos verdes vinculados a la transición energética encabezan las contrataciones del año. Las empresas buscan perfiles digitales y sostenibles, y el talento bien formado en estas áreas está encontrando oportunidades sin precedentes.",
-          fuente: "Infobae / Perspectivas laborales 2026",
-          url: "https://www.infobae.com/economia/2026/02/04/perspectivas-laborales-que-sectores-generaran-mas-empleo-en-2026-y-que-puestos-buscan-las-empresas/"
+          cat: "Empleo",
+          tit: "OIT: América Latina cierra el primer semestre de 2026 con la menor tasa de desempleo en 15 años",
+          txt: "La Organización Internacional del Trabajo presentó su informe de mitad de año: América Latina cerró el primer semestre de 2026 con una tasa de desempleo de 6,2%, la más baja en 15 años. Brasil, Colombia y Chile lideran la mejora, impulsados por el crecimiento del sector servicios y la economía digital.",
+          fuente: "OIT / ILOSTAT",
+          url: "https://www.ilo.org/americas"
         },
         {
-          cat: "América Central",
-          tit: "Panamá entre los países de mayor crecimiento del mundo en 2026: inversión, empleo formal y entrada de capitales en alza",
-          txt: "El Ministerio de Economía de Panamá proyecta que el país estará entre los de mayor crecimiento del mundo en 2026, impulsado por la confianza inversora y la creación de empleo bien remunerado. El optimismo económico panameño señala una América Central que avanza con paso firme.",
-          fuente: "MEF Panamá / Economía y finanzas 2026",
-          url: "https://www.mef.gob.pa/2026/01/optimismo-economico-generacion-de-empleo-y-avances-para-salir-de-listas-internacionales-en-el-2026/"
+          cat: "Mercados",
+          tit: "SpaceX debuta en bolsa con valoración de 350.000 millones de dólares: la mayor OPV tecnológica de 2026",
+          txt: "SpaceX completó su salida a bolsa en junio de 2026 con una valoración de 350.000 millones de dólares, convirtiéndose en la mayor oferta pública tecnológica del año. Las acciones subieron un 22% el primer día, impulsadas por el crecimiento de Starlink y los contratos multimillonarios con la NASA y el Pentágono.",
+          fuente: "Gizmodo en Español",
+          url: "https://es.gizmodo.com/spacex-salio-a-bolsa-y-su-historia-tecnologica-lo-explica-todo-de-pagar-18-500-dolares-por-kilo-en-orbita-a-2-700-de-cohetes-desechables-a-650-lanzamientos-reutilizables-y-9-600-satelites-starlink-2000240857"
         }
       ]
     },
@@ -412,25 +416,25 @@ const DATOS = {
       color: "#ea580c",
       notas: [
         {
-          cat: "Copa Mundial 2026",
-          tit: "La Copa del Mundo 2026 celebra su poder para construir puentes: 48 naciones, 104 partidos, un mismo sueño humano",
-          txt: "Las Naciones Unidas destacan que el Mundial 2026 es un símbolo de cómo el deporte trasciende fronteras, idiomas y diferencias. Con 48 selecciones y más partidos que nunca, millones de personas de todo el planeta comparten un mismo momento de emoción y humanidad compartida.",
-          fuente: "TUDN / Copa Mundial 2026",
-          url: "https://www.tudn.com/mundial-2026"
+          cat: "Messi",
+          tit: "Messi bate 4 récords en el Mundial 2026 y se convierte en el máximo goleador histórico con 16 tantos",
+          txt: "Lionel Messi superó a Miroslav Klose como el máximo goleador histórico de los Mundiales al anotar ante Austria, alcanzando 16 goles en Copas del Mundo. En el mismo partido estableció cuatro marcas históricas que incluyen récords en asistencias y participaciones en goles. Una actuación que trasciende el deporte.",
+          fuente: "Olympics.com / La Nación",
+          url: "https://www.olympics.com/es/noticias/mundial-2026-tabla-goleo-asistencias"
         },
         {
-          cat: "Reconocimiento femenino",
-          tit: "Guatemala homenajea a dos leyendas del deporte femenino: Flores y Zebadúa ingresan a la Galería de los Notables",
-          txt: "La Confederación Deportiva Autónoma de Guatemala incorporó a sus salones del honor a la exgimnasta María Inés Flores Wurmeser y a la arquera María José Zebadúa, reconociendo su contribución extraordinaria al deporte nacional como modelos para las futuras generaciones.",
-          fuente: "Guatemala.com / Deporte guatemalteco 2026",
-          url: "https://www.guatemala.com/deportes/actualidad/guatemaltecas-galeria-notables-del-deporte-guatemalteco-2026.html"
+          cat: "Premios Históricos",
+          tit: "Copa del Mundo 2026: el campeón recibirá 42 millones de euros, el mayor premio en la historia del fútbol",
+          txt: "La FIFA confirmó que el ganador de la Copa del Mundo 2026 se llevará 42 millones de euros, un récord absoluto. La bolsa total del torneo asciende a 625 millones de euros distribuidos entre 48 selecciones. El dato refleja el crecimiento exponencial del fútbol como el mayor evento deportivo del planeta.",
+          fuente: "FIFA / Unánimo Deportes",
+          url: "https://unanimodeportes.com/deportes/futbol/mundial2026/mundial-2026-rompe-record-historico-de-asistencia-en-un-solo-dia/"
         },
         {
-          cat: "Leyenda viva",
-          tit: "Lionel Messi cumple 39 años en pleno Mundial 2026: el mejor del mundo celebra su cumpleaños como líder de la Albiceleste",
-          txt: "El 24 de junio, Lionel Messi celebra su cumpleaños número 39 en el corazón del Mundial 2026, liderando a Argentina como capitán y referente indiscutido. El mayor de todos sigue demostrando que la edad es solo un número cuando la pasión y el talento son genuinos.",
-          fuente: "Ambito / Selección Argentina Mundial 2026",
-          url: "https://www.ambito.com/deportes/seleccion-argentina-mundial-2026-en-vivo-kansas-lionel-scaloni-messi-austria-noticias-minuto-a-minuto-en-vivo-22-junio"
+          cat: "Asistencia Histórica",
+          tit: "Primera semana del Mundial 2026: 1,3 millones de aficionados y la tasa de lleno más alta en la historia",
+          txt: "Tras la primera semana de competencia, 1.309.652 aficionados asistieron a los partidos del Mundial 2026 con un promedio de 65.483 espectadores por encuentro, la tasa de lleno más alta en la historia de una Copa del Mundo. Los estadios de EE. UU., Canadá y México registraron sold-out en prácticamente todos los cotejos.",
+          fuente: "Express News / FIFA",
+          url: "https://expressnews.uk.com/resumen-inicio-mundial-2026-record-asistencia/"
         }
       ]
     },
@@ -440,25 +444,25 @@ const DATOS = {
       color: "#3a8dde",
       notas: [
         {
-          cat: "Paleontología",
-          tit: "CONICET descubre un megapredador de 6 metros en La Rioja: un cráneo de 60 centímetros que reescribe la prehistoria",
-          txt: "Un equipo de investigación del CONICET halló en La Rioja los restos de un megapredador prehistórico de 6 metros de largo con un cráneo de 60 centímetros. El hallazgo suma un nuevo capítulo extraordinario a la riqueza paleontológica argentina, una de las mayores del mundo.",
-          fuente: "CONICET Nordeste / Junio 2026",
-          url: "https://nordeste.conicet.gov.ar/junio-2026/"
+          cat: "Trasplantes",
+          tit: "Argentina bate su récord histórico de trasplantes: 228 procedimientos exitosos en mayo de 2026",
+          txt: "El INCUCAI informó que mayo de 2026 fue el mes con mayor cantidad de trasplantes en la historia argentina: 228 procedimientos exitosos gracias a 109 procesos de donación de órganos. El logro es fruto de años de campañas de concientización, la modernización hospitalaria y el compromiso de miles de familias donantes.",
+          fuente: "INCUCAI",
+          url: "https://www.incucai.gov.ar"
         },
         {
-          cat: "Economía",
-          tit: "El FMI proyecta que Argentina crecerá un 4% en 2026: entre las economías más dinámicas de América Latina",
-          txt: "El Fondo Monetario Internacional ubica a Argentina entre las economías de mayor crecimiento en la región en 2026, con un escenario macroeconómico favorable para inversiones de mediano y largo plazo en sectores estratégicos como la minería, la energía y el agro exportador.",
-          fuente: "La Nación / Economía argentina 2026",
-          url: "https://www.lanacion.com.ar/economia/"
+          cat: "Oncología",
+          tit: "La mortalidad por cáncer de próstata en Argentina cayó un 26% entre 2014 y 2024",
+          txt: "Un estudio publicado en junio de 2026 por el Instituto Nacional del Cáncer de Argentina reveló que la mortalidad por cáncer de próstata bajó un 26% en una década gracias a la detección temprana con el test PSA y el acceso a nuevas terapias hormonales. Argentina lidera la caída de mortalidad oncológica en América del Sur.",
+          fuente: "Instituto Nacional del Cáncer Argentina",
+          url: "https://www.argentina.gob.ar/salud/inc"
         },
         {
-          cat: "Cultura / Internacional",
-          tit: "Ibermúsicas 2026 abre su convocatoria: músicos argentinos pueden proyectarse en los 22 países de Iberoamérica",
-          txt: "La Secretaría de Cultura de la Nación y el INAMU lanzaron las convocatorias del programa Ibermúsicas 2026, que promueve la formación y circulación de artistas musicales argentinos en mercados internacionales. Las postulaciones están abiertas del 15 de junio al 1.° de octubre.",
-          fuente: "Argentina.gob.ar / Ibermúsicas 2026",
-          url: "https://www.argentina.gob.ar/noticias/ibermusicas-2026-una-oportunidad-para-que-los-profesionales-de-la-musica-argentina-amplien"
+          cat: "Inclusión",
+          tit: "El CUD se integra a la tarjeta SUBE: 1,2 millones de personas con discapacidad acceden automáticamente a tarifas preferenciales",
+          txt: "El Gobierno nacional anunció en junio de 2026 la integración del Certificado Único de Discapacidad a la tarjeta SUBE. Más de 1,2 millones de personas con discapacidad acceden automáticamente a las tarifas preferenciales del transporte público en todo el país, eliminando la burocracia anterior.",
+          fuente: "Argentina.gob.ar",
+          url: "https://www.argentina.gob.ar/transporte/sube"
         }
       ]
     }
@@ -495,7 +499,9 @@ const DATOS = {
 
   // Sections
   DATOS.secciones.forEach(s=>{
-    html+=`<section class="section"><div class="section-head"><span class="ico">${s.icono}</span><h2>${esc(s.nombre)}</h2><span class="rule"></span></div><div class="grid">`;
+    html+=`<section class="section"><div class="section-head"><span class="ico">${s.icono}</span><h2>${esc(s.nombre)}</h2><span class="rule"></span></div>`;
+    if(s.aviso){html+=`<p class="aviso">${esc(s.aviso)}</p>`;}
+    html+=`<div class="grid">`;
     s.notas.forEach(n=>{
       html+=`<article class="card" style="--cat:${s.color}">
         <span class="ct">${esc(n.cat)}</span>
